@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#fafafa, #ddddf3);
+}
+
+.contenedor {
+    margin: 50px auto;
+    width: 400px;
+    /* para centrar el formulario*/
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+
+.contenedor .elemento label {
+    color: white;
+}
+
+.contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    margin-bottom: 30px;
+}
+
+
+/* para aplicar a los elementos de tipo "SUBMIT"*/
+
+#btnLogin {
+    background-color: #44c4d4;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}

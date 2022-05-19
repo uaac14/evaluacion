@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="medico">Seleccione:</label>
+                    <select class="form-control" id="medico">
+                        <option value="seleccione" selected disabled value="">Seleccione</option>
+                    <option>Médico</option>
+                    <option>Dentista</option>
+                </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="nombreM">Nombre del medico:</label>
+                    <select class="form-control" id="nombreM">
+                    <option value="seleccione" selected disabled value="">Seleccione</option>
+                    <option>Raul Rodriguez</option>
+                    <option>Mario Galaviz</option>
+                </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre">Nombre(s):</label>
+                    <input placeholder="Incerte su nombre" type="text" class="form-control" id="nombre">
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellido">Apellido:</label>
+                    <input placeholder="Incerte su apellido" type="text" class="form-control" id="apellido">
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="ciudad">Localidad:</label>
+                    <input type="text" class="form-control" id="ciudad" aria-describedby="validationServer03Feedback">
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                        Porfavor Ingrese Localidad.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="edad">Edad:</label>
+                    <input type="number" class="form-control" id="edad">
+                    <div id=" validationServer04Feedback " class="invalid-feedback ">
+                        Porfavor seleccione su edad
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" class="form-control" id="correo" aria-describedby="validationServer05Feedback">
+                    <div id="validationServer05Feedback " class="invalid-feedback ">
+                        Porfavor ingrese correo electronico
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="fecha">Seleccione fecha:</label>
+                    <input type="datetime-local" class="form-control" id="fecha" aria-describedby="validationServer05Feedback">
+                    <div id="validationServer05Feedback " class="invalid-feedback ">
+                        Porfavor ingrese fecha de cita
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" class="form-control" id="edad">
+                    <div id=" validationServer04Feedback " class="invalid-feedback ">
+                        Porfavor seleccione su Telefono
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <label for="medio">Medio por el cual se entero:</label>
+                    <select class="form-control" id="medio">
+                        <option value="seleccione" selected disabled value="">Seleccione</option>
+                        <option>Conocido</option>
+                        <option>Red Socila</option>
+                    </select>
+                    <div id="validationServer05Feedback " class="invalid-feedback ">
+                        Porfavor ingrese correo electronico
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for=" observaciones ">Observaciones:</label>
+                <textarea class="form-control " id="observaciones " placeholder="Observaciones "></textarea>
+                <div class="invalid-feedback ">
+                    Please enter a message in the textarea.
+                </div>
+            </div>
+            <button class="btn btn-primary " onclick="registroCita(event)">Registrar</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js " integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="anonymous "></script>
+    <script src="js/cita.js "></script>
+</body>
+
+</html>
